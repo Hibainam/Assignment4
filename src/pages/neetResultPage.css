@@ -1,0 +1,45 @@
+.neet-result-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .neet-result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .neet-result-table th, .neet-result-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .neet-result-table th {
+    background-color: #42A5F5;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .neet-result-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .neet-result-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .neet-result-table td {
+    color: #555;
+  }
+  

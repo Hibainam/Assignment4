@@ -1,0 +1,333 @@
+/* General Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+}
+
+/* Side Navigation */
+.side-nav {
+  width: 250px;
+  background-color: #545455;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.side-nav-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.side-nav-item {
+  background: none;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 5px 0;
+  text-align: left;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.side-nav-item i {
+  margin-right: 10px;
+}
+
+.side-nav-item.active {
+  background-color: #777878;
+}
+
+.side-nav-item:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.tab-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.tab-content p,
+.tab-content ul li {
+  font-size: 1rem;
+  color: #555;
+}
+
+.tab-content ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.edit-profile-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.edit-profile-link:hover {
+  text-decoration: underline;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.profile .profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.profile .profile-info i {
+  margin-right: 8px;
+}
+
+.profile .profile-info p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.profile .edit-profile-link {
+  margin-top: 20px;
+}
+
+.profile .profile-avatar {
+  margin-bottom: 20px;
+}
+
+.profile .profile-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.side-nav-title {
+  color: white;
+}
+
+.logout-btn {
+  background-color: #f44336; /* Red color */
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 30px; /* Adjusted margin for better positioning */
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+/* Profile Avatar Style */
+.profile-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+input[type="file"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.profile-image {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Profile image */
+.profile-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Attendance section */
+.attendance {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Title of the attendance section */
+.attendance h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Attendance stats box */
+.attendance-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.attendance-stat {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attendance-stat:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.attendance-stat h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.attendance-stat p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.attendance-chart {
+  width: 30%;
+  height: 30%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-chart canvas {
+  border-radius: 8px;
+}
+
+/* Pie chart container */
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.attendance p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+  text-align: center;
+}
+
+.attendance-footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.attendance-footer a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.attendance-footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.performance-chart {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.performance-title {
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  font-weight: 600;   /* Equivalent to font-semibold */
+  color: #2d3748;    /* Equivalent to text-gray-800 */
+  margin-bottom: 16px;
+}
+
+.performance-chart-container {
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
